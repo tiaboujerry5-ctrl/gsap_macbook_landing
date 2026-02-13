@@ -1,9 +1,11 @@
-import NavBar from "./components/NavBar.jsx";
-
+import NavBar from './components/NavBar';
+import Hero from './components/Hero';
 const App = () => {
     return (
-        <main>
+        <main className="bg-black">
             <NavBar />
+            <Hero />
+            {/* Other sections like Highlights will go here */}
         </main>
     )
 }
