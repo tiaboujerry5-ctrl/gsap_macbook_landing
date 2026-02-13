@@ -1,7 +1,7 @@
 import  {useEffect, useRef} from 'react';
 
 const Hero = () => {
-    const videoRef = useRef();
+    const videoRef = useRef(null);
 
     useEffect(() => {
         if(videoRef.current)  videoRef.current.playbackRate = 2;
@@ -15,7 +15,7 @@ const Hero = () => {
             </div>
 
             <video ref={videoRef} src='/videos/hero.mp4' autoPlay muted playsInline />
-
+            
             <button type="button" className="btn">Buy</button>
 
             <p>From $1599 or $133/mo for 12 months</p>
